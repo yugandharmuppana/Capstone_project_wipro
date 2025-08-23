@@ -1,0 +1,11 @@
+
+
+<suite name="parameterSuite">
+    <test name="plugintest">
+        <parameter name="username" value="admin" />
+        <parameter name="password" value="admin@123" />
+        <classes>
+            <class name="Testing_package.plugintest"/>
+        </classes>
+    </test>
+</suite>
