@@ -1,0 +1,22 @@
+/*1.check if a user can log in
+* first check if Username is correct
+* then check if password is correct
+*
+* 2. write a program for loan approval
+* first check if salary>25000
+* then check if credit score >=700
+*
+* 3. write a program for driving license eligibility
+* age must be greater than equal to 18
+* must have passed the driving test*/
+
+package Control_Statement_Practice;
+
+public class Nested_if_Statement_task1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
