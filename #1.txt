@@ -1,0 +1,261 @@
+Started by user Yugandhar Muppana
+Running as SYSTEM
+Building in workspace C:\Users\ASUS\.jenkins\workspace\Browser_Stack
+[Browser_Stack] $ cmd /c call C:\Users\ASUS\AppData\Local\Temp\jenkins14226106402023212106.bat
+
+C:\Users\ASUS\.jenkins\workspace\Browser_Stack>cd C:\Users\ASUS\git\Capstone_project_wipro\Capstone_Project\ 
+
+C:\Users\ASUS\git\Capstone_project_wipro\Capstone_Project>mvn clean test 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< Capstone_Project:Capstone_Project >------------------
+[INFO] Building Capstone_Project 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ Capstone_Project ---
+[INFO] Deleting C:\Users\ASUS\git\Capstone_project_wipro\Capstone_Project\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Capstone_Project ---
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ Capstone_Project ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Capstone_Project ---
+[INFO] Copying 10 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ Capstone_Project ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 12 source files with javac [debug target 1.8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] /C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/java/Step_Definition/TestRunner.java: C:\Users\ASUS\git\Capstone_project_wipro\Capstone_Project\src\test\java\Step_Definition\TestRunner.java uses or overrides a deprecated API.
+[INFO] /C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/java/Step_Definition/TestRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ Capstone_Project ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running Checking add to cart functionality
+
+Scenario: add to cart                          # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Addtocart.feature:2
+Sep 06, 2025 9:02:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:02:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given Home page in default browser         # Step_Definition.Addtocart.home_page_in_default_browser()
+  ✔ When click on sign and signin with details # Step_Definition.Addtocart.click_on_sign_and_signin_with_details()
+  ✔ And Add an item to cart                    # Step_Definition.Addtocart.add_an_item_to_cart()
+Sep 06, 2025 9:02:57 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+Item Added to cart 
+  ✔ Then close the popup                       # Step_Definition.Addtocart.close_the_popup()
+
+Scenario: checkout                                    # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Checkout.feature:2
+Sep 06, 2025 9:02:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:02:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open homepage in the default browser window # Step_Definition.Checkout.open_homepage_in_the_default_browser_window()
+  ✔ When click on signin link and then sign in        # Step_Definition.Checkout.click_on_signin_link_and_then_sign_in()
+  ✔ And add a product to cart and click on checkout   # Step_Definition.Checkout.add_a_product_to_cart_and_click_on_checkout()
+  ✔ And add all information and click on continue     # Step_Definition.Checkout.add_all_information_and_click_on_continue()
+  ✔ And click on download pdf                         # Step_Definition.Checkout.click_on_download_pdf()
+  ✔ And click on continue shopping                    # Step_Definition.Checkout.click_on_continue_shopping()
+Sep 06, 2025 9:03:08 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+WARNING: Connection reset
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1170)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:833)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:774)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:957)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:982)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:937)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:937)
+
+Checkout process completed
+  ✔ Then close browser                                # Step_Definition.Checkout.close_browser()
+
+Scenario: Adding and removing items as favourites       # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Favourites.feature:2
+Sep 06, 2025 9:03:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:03:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given Home page should be opened in default browser # Step_Definition.Favourites.home_page_should_be_opened_in_default_browser()
+  ✔ When Click on signlink and signin                   # Step_Definition.Favourites.click_on_signlink_and_signin()
+  ✔ And add an item to favourites                       # Step_Definition.Favourites.add_an_item_to_favourites()
+  ✔ And check in favourites section                     # Step_Definition.Favourites.check_in_favourites_section()
+  ✔ And click on the logo                               # Step_Definition.Favourites.click_on_the_logo()
+  ✔ And remove from favourites                          # Step_Definition.Favourites.remove_from_favourites()
+Favourites Done 
+  ✔ Then close the driver                               # Step_Definition.Favourites.close_the_driver()
+
+Scenario: Filters                                 # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Filters.feature:2
+Sep 06, 2025 9:03:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:03:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open the homepage in default browser    # Step_Definition.Filters.open_the_homepage_in_default_browser()
+  ✔ When selct multiple selections using dropdown # Step_Definition.Filters.selct_multiple_selections_using_dropdown()
+Filters completed
+  ✔ Then close the driver2                        # Step_Definition.Filters.close_the_driver2()
+
+Scenario: Footer links                    # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/FooterLinks.feature:2
+Sep 06, 2025 9:03:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:03:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open homepage in defalt browser # Step_Definition.FooterLinks.open_homepage_in_defalt_browser()
+  ✔ When click on the link in footer      # Step_Definition.FooterLinks.click_on_the_link_in_footer()
+Footer link Clicked
+  ✔ Then print message                    # Step_Definition.FooterLinks.print_message()
+
+Scenario: header links                    # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/HeaderLinks.feature:2
+Sep 06, 2025 9:03:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:03:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open website in default browser # Step_Definition.HeaderLinks.open_website_in_default_browser()
+  ✔ When click on sign and signin         # Step_Definition.HeaderLinks.click_on_sign_and_signin()
+  ✔ And navigate to offers                # Step_Definition.HeaderLinks.navigate_to_offers()
+  ✔ And navigate to favourites            # Step_Definition.HeaderLinks.navigate_to_favourites()
+  ✔ And navigate to orders                # Step_Definition.HeaderLinks.navigate_to_orders()
+Header links clicked
+  ✔ Then close the browser4               # Step_Definition.HeaderLinks.close_the_browser4()
+
+Scenario: Successful login                                   # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Login.feature:2
+Sep 06, 2025 9:03:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:03:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given Bstack website should be opened in default browser # Step_Definition.Login.bstack_website_should_be_opened_in_default_browser()
+  ✔ And Click on signin link and add username and password   # Step_Definition.Login.click_on_signin_link_and_add_username_and_password()
+Login Successful
+  ✔ Then click on login button                               # Step_Definition.Login.click_on_login_button()
+
+Scenario: LOGOUT                                        # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Logout.feature:2
+Sep 06, 2025 9:04:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:04:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open browser stack website in default browser # Step_Definition.Logout.open_browser_stack_website_in_default_browser()
+  ✔ When click on signin and then signin                # Step_Definition.Logout.click_on_signin_and_then_signin()
+  ✔ And click on logout                                 # Step_Definition.Logout.click_on_logout()
+Logout done successfully
+  ✔ Then close the browser8                             # Step_Definition.Logout.close_the_browser8()
+
+Scenario: Remove from cart                 # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Removefromcart.feature:2
+Sep 06, 2025 9:04:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:04:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given Open homepage in default browser # Step_Definition.Removefromcart.open_homepage_in_default_browser()
+  ✔ When click on sign in and then login   # Step_Definition.Removefromcart.click_on_sign_in_and_then_login()
+  ✔ And add an item to cart                # Step_Definition.Removefromcart.add_an_item_to_cart()
+  ✔ And remove the item from cart          # Step_Definition.Removefromcart.remove_the_item_from_cart()
+Item removed from cart
+  ✔ Then close the cart popup              # Step_Definition.Removefromcart.close_the_cart_popup()
+
+Scenario Outline: search feature                           # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Search.feature:8
+Sep 06, 2025 9:04:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:04:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open home page in defaults browser1              # Step_Definition.Search.open_home_page_in_defaults_browser1()
+  ✔ When go to Apple and add some text and click on search # Step_Definition.Search.go_to_search_and_add_some_text_and_click_on_search(java.lang.String)
+Search Completed
+  ✔ Then close driver                                      # Step_Definition.Search.close_driver()
+
+Scenario Outline: search feature                            # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Search.feature:9
+Sep 06, 2025 9:04:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:04:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open home page in defaults browser1               # Step_Definition.Search.open_home_page_in_defaults_browser1()
+  ✔ When go to Google and add some text and click on search # Step_Definition.Search.go_to_search_and_add_some_text_and_click_on_search(java.lang.String)
+Search Completed
+  ✔ Then close driver                                       # Step_Definition.Search.close_driver()
+
+Scenario Outline: search feature                          # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Search.feature:10
+Sep 06, 2025 9:04:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:04:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open home page in defaults browser1             # Step_Definition.Search.open_home_page_in_defaults_browser1()
+  ✔ When go to Vivo and add some text and click on search # Step_Definition.Search.go_to_search_and_add_some_text_and_click_on_search(java.lang.String)
+Search Completed
+  ✔ Then close driver                                     # Step_Definition.Search.close_driver()
+
+Scenario Outline: search feature                          # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Search.feature:11
+Sep 06, 2025 9:04:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:04:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open home page in defaults browser1             # Step_Definition.Search.open_home_page_in_defaults_browser1()
+  ✔ When go to Oppo and add some text and click on search # Step_Definition.Search.go_to_search_and_add_some_text_and_click_on_search(java.lang.String)
+Search Completed
+  ✔ Then close driver                                     # Step_Definition.Search.close_driver()
+
+Scenario Outline: search feature                             # file:///C:/Users/ASUS/git/Capstone_project_wipro/Capstone_Project/src/test/resources/Features/Search.feature:12
+Sep 06, 2025 9:04:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 06, 2025 9:04:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open home page in defaults browser1                # Step_Definition.Search.open_home_page_in_defaults_browser1()
+  ✔ When go to Samsung and add some text and click on search # Step_Definition.Search.go_to_search_and_add_some_text_and_click_on_search(java.lang.String)
+Search Completed
+  ✔ Then close driver                                        # Step_Definition.Search.close_driver()
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 137.2 s -- in Search Future
+[INFO] Checking add to cart functionality.add to cart -- Time elapsed: 9.514 s
+[INFO] Checkout functionality.checkout -- Time elapsed: 11.87 s
+[INFO] Checking favourites Section.Adding and removing items as favourites -- Time elapsed: 11.12 s
+[INFO] Checking Filters working or not.Filters -- Time elapsed: 7.648 s
+[INFO] Checking Footer links.Footer links -- Time elapsed: 9.708 s
+[INFO] Header links.header links -- Time elapsed: 13.17 s
+[INFO] Checking user login.Successful login -- Time elapsed: 9.889 s
+[INFO] Logout Functionality.LOGOUT -- Time elapsed: 8.661 s
+[INFO] Remove from cart.Remove from cart -- Time elapsed: 10.84 s
+[INFO] Search Future.search feature #1 -- Time elapsed: 8.000 s
+[INFO] Search Future.search feature #2 -- Time elapsed: 9.081 s
+[INFO] Search Future.search feature #3 -- Time elapsed: 9.164 s
+[INFO] Search Future.search feature #4 -- Time elapsed: 9.265 s
+[INFO] Search Future.search feature #5 -- Time elapsed: 9.199 s
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:21 min
+[INFO] Finished at: 2025-09-06T21:05:05+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
